@@ -20,18 +20,16 @@ body {
 
 .calculator {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  gap: 20px;
   width: 900px;
-  padding: 50px;
+  height: 90%;
   border: 1px solid green;
 }
 .calculator__controls {
   display: flex;
   gap: 10px;
   width: 100%;
+  padding: 20px;
 }
 .window-btn {
   width: 30px;
@@ -50,15 +48,35 @@ body {
 }
 
 .display {
-  height: 300px;
+  height: 20%;
+  padding: 20px;
   border: 1px solid red;
+  font-size: 100px;
+  text-align: right;
 }
+
 .buttons {
-  height: 700px;
+  display: flex;
+  flex-wrap: wrap;   
+  height: 80%;
   border: 1px solid blue;
 }
-.display,
-.buttons {
-  width: 100%;
-  padding: 20px;
+
+.button {
+  width: calc(100% / 4);
+  height: calc(100% / 5);
+  background-color: #efefef;
+  cursor: pointer;
+  font-size: 30px;
+}
+.zero{
+  width: 50%;
+}
+
+.button:hover{
+  background-color: #e2e2e2;
+}
+.button:active{
+  background-color: #5030e3;
+  color: #fff;
 }
