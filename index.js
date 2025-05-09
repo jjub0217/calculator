@@ -44,7 +44,7 @@ const handleOperator = (clickedOperator) => {
 const handleEqual = () => {
 
   // 처음부터 소숫점 버튼만 눌려 있는 경우랑 한글자도 입력하지 않은 상태라면 "0" 을 디스플레이에 표시
-  const isOnlyDecimalPressed = isDecimal && secondRaw.length <= 1;
+  const isOnlyDecimalPressed = isDecimal && display.textContent.length <= 1;
   secondOperand = isOnlyDecimalPressed ? "0" : display.textContent;
 
 
@@ -87,7 +87,7 @@ const calculate = (firstOperand, operatorValue, secondOperand) => {
 // 사용자 입력 처리 함수
 const showDisplay = (btn, classList) => {
 
-  const isBtnDecimal = [...classList].includes("decimal");
+  const isBtnDecimal = classList.contains("decimal");
 
   // 소숫점 중복 입력 방지
   // 소숫점을 다시 눌렀을 경우도 isBtnDecimal 은 소숫점 버튼을 누른거니까 이 역시 true이다. isBtnDecimal = true
