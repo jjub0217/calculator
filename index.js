@@ -43,7 +43,7 @@ const showDisplay = (btn, classList) => {
   
   if (display.textContent === "0") {
     display.textContent = "";
-    
+
     // 소숫점 버튼을 처음 눌렀을 경우엔 '0.'으로 시작되게 하고, 그 외에는 그대로 입력
     display.textContent += isBtnDecimal ? "0." : btn;
     adjustFontSize();
@@ -71,3 +71,8 @@ clearBtn.addEventListener("click", function () {
   display.textContent = "0";
   display.style.fontSize = "100px";
 });
+
+
+
+
+
