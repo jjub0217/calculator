@@ -9,22 +9,40 @@
     <script src="./index.js" defer></script>
   </head>
   <body>
-    <div class="calculator__container">
+    <div class="dock-icon" id="dockIcon">
+      <div class="icon plus">
+        <img src="./plus.png" alt="" />
+      </div>
+      <div class="icon minus">
+        <img src="./minus.png" alt="" />
+      </div>
+      <div class="icon multi">
+        <img src="./multiply.png" alt="" />
+      </div>
+      <div class="icon equl">
+        <img src="./equal.png" alt="" />
+      </div>
+    </div>
+    <div class="calculator__container" id="calculatorApp">
       <div class="calculator">
         <div class="calculator__display">
           <div class="calculator__controls">
             <button class="window-btn window-btn--close"></button>
-            <button class="window-btn window-btn--minsize"></button>
-            <button class="window-btn window-btn--maxsize"></button>
           </div>
-          <div class="display__container">
-            <div class="display">0</div>
+          <div class="display__wrap">
+            <div class="display__container">
+              <div class="display">0</div>
+            </div>
           </div>
         </div>
         <div class="buttons">
           <button type="button" class="button function clear-btn">C</button>
-          <button type="button" class="button function">&plusmn;</button>
-          <button type="button" class="button function">&#37;</button>
+          <button type="button" class="button function plusmn-btn">
+            &plusmn;
+          </button>
+          <button type="button" class="button function percent-btn">
+            &#37;
+          </button>
           <button type="button" class="button operator">&#47;</button>
           <button type="button" class="button number">7</button>
           <button type="button" class="button number">8</button>
